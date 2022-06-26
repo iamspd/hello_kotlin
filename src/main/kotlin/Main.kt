@@ -80,6 +80,16 @@ fun main() {
         in 1..10 -> println("the value of $a is in range")
         else -> println("Not a value!")
     }
+
+    // -----------------------------------------------------------------------------------------------------
+
+    /**
+     * kotlin is a null-safe language, which means variable can't be null
+     * unless specified to be
+     * declare a null variable using '?' after the datatype
+     */
+    val n: Int? = null
+    println("Nullable values $n")
 }
 
 
