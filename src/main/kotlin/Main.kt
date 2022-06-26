@@ -17,9 +17,25 @@
  */
 
 fun main() {
-    println("Hello world!")
 
-    
+    // println("Hello world!")
+
+    /** kotlin is strongly typed language, it does a lot to infer the type of variable
+     *  however, no need to define dataType while initializing variables
+     *  'val' states that the value of the variable will be fixed and can't be changed,
+     *  use 'var' otherwise.
+     */
+
     val i: Int = 8
 
+    /**
+     * this is explicit type conversion in kotlin
+     * to do this, use <variable>.to(datatype)
+     * int i can't be parsed to double j, so converted i to double
+     * and same for String k
+     */
+    val j: Double = i.toDouble()
+    val k: String = i.toString()
+
+    println(""+ i + "\n"+ j +"\n"+ k)
 }
