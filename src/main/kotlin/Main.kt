@@ -96,7 +96,7 @@ fun main() {
     /**
      * if (n != null) --> n?
      * to check whether the variable is null or not
-     * here, the variable is null then it gets the value after '?:'
+     * here, the variable is null then it gets the value after '?:' - the Elvis operator
      */
     n = n?.dec() ?: 0
     println("the updated value of $n")
