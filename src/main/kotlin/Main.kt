@@ -88,8 +88,18 @@ fun main() {
      * unless specified to be
      * declare a null variable using '?' after the datatype
      */
-    val n: Int? = null
+    var n: Int? = null
     println("Nullable values $n")
+
+    n = 9
+
+    /**
+     * if (n != null) --> n?
+     * to check whether the variable is null or not
+     * here, the variable is null then it gets the value after '?:'
+     */
+    n = n?.dec() ?: 0
+    println("the updated value of $n")
 }
 
 
