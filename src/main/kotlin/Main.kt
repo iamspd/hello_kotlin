@@ -13,7 +13,6 @@
  *
  * ------------ kotlin keeps numbers as primitive, but it lets
  *              you call methods on them as they were objects
- *
  */
 
 fun main() {
@@ -53,6 +52,9 @@ fun main() {
      * Is known as Variable Interpolation
      */
     println("make a $longNumbers lives easy!")
+
+    // can directly define expression inside println function
+    println("make a ${longNumbers + 1_000_000} lives easy")
 }
 
 
