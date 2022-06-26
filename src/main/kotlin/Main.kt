@@ -46,4 +46,18 @@ fun main() {
 
     val longNumbers = 1_000_000
     println(longNumbers)
+
+    /**
+     * unlike Java, I can print the value of the variable using
+     * String template '$variable' inside print statement
+     * Is known as Variable Interpolation
+     */
+    println("make a $longNumbers lives easy!")
 }
+
+
+
+
+
+
+
