@@ -69,6 +69,17 @@ fun main() {
     if (a in 1..10) {
         println("$a is in range")
     }
+
+    /**
+     * replacement statement of switch
+     * if/else.if/else --> use when
+     */
+
+    when (a) {
+        0 -> println("the value is 0")
+        in 1..10 -> println("the value of $a is in range")
+        else -> println("Not a value!")
+    }
 }
 
 
