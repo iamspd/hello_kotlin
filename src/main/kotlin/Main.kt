@@ -100,6 +100,14 @@ fun main() {
      */
     n = n?.dec() ?: 0
     println("the updated value of $n")
+
+    /**
+     * double bang '!!' operator to assert that the value of the variable can't be null
+     * otherwise gives NullPointerException
+     * The language doesn't recommend it
+     */
+    val assertNotNull = n!!.dec()
+    println(assertNotNull)
 }
 
 
