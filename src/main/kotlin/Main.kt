@@ -26,6 +26,7 @@ fun main() {
      */
 
     val i: Int = 8
+    val a = 10
 
     /**
      * this is explicit type conversion in kotlin
@@ -54,8 +55,22 @@ fun main() {
     println("make a $longNumbers lives easy!")
 
     // can directly define expression inside println function
-    println("make a ${longNumbers + 1_000_000} lives easy")
+    println("make ${longNumbers + 1_000_000} lives easy!!")
+
+    if (a <= i) {
+        println("$a is less than $i")
+    } else {
+        print("$a is greater than $i")
+    }
+
+    /**
+     * to define range in a statement (1..1000)
+     */
+    if (a in 1..10) {
+        println("$a is in range")
+    }
 }
+
 
 
 
