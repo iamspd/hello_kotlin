@@ -161,6 +161,32 @@ fun main() {
     // here, 'it' refers to array index starting from 0
     val initializedArray = Array (5) {it * 2}
     println(initializedArray.contentToString())
+
+    for (car in cars) {
+        print("for loop: $car \n")
+    }
+
+    /**
+     * loop through elements while keeping track of index at same time
+     */
+    for ((index, element) in cars.withIndex()) {
+        println("At index $index element is $element")
+    }
+
+    // using range function, you don't need to increment the index to move to next
+    for (it in 1..5) print(it)
+
+    // works for alphabets too
+    for (it in 'a'..'c') print(it)
+
+    // step 2 decides till which step the loop will iterate
+    for (it in 1..5 step 2) print(it)
+
+    print("\n")
+
+    // iterate backwards in loop --> use downTo
+    for (it in 5 downTo 1) print(it)
+
 }
 
 
