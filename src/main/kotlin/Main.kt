@@ -1,3 +1,5 @@
+import java.util.*
+
 /**
  * codeLab #1: fun printHello() {
  *                  println("Hello world!")
@@ -108,6 +110,26 @@ fun main() {
      */
     val assertNotNull = n!!.dec()
     println(assertNotNull)
+
+    /**
+     * list declaration
+     * the elements of the list are fixed and can't be changed
+     */
+    val goals = listOf("Alpha", "House", "Peace")
+    println(goals)
+
+    /**
+     * mutable list where the list elements could be changed -> added or removed
+     *
+     * lists can have any type of element
+     */
+    val wishList = mutableListOf("Job", "Living", "Name - Priyank", "Investments", 0)
+    println(wishList)
+
+    // remove an element from a mutable list
+    wishList.remove(0)
+    // wishList.removeAt(4)
+    println(wishList)
 }
 
 
