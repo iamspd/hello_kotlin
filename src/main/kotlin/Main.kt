@@ -130,6 +130,22 @@ fun main() {
     wishList.remove(0)
     // wishList.removeAt(4)
     println(wishList)
+
+    /**
+     * no type association in array, so they can be of any type
+     * but of fixed size, there is no mutable array in kotlin -> neither element is removed nor added
+     */
+
+    val cars = arrayOf("Mercedes", "Audi", "Tesla", 4)
+    println(Arrays.toString(cars))
+
+    // addition of arrays
+
+    val numbers = intArrayOf(1, 2, 3)
+    val numbers2 = intArrayOf(4, 5, 6)
+    val addArrays = numbers + numbers2
+
+    println(addArrays[4])
 }
 
 
