@@ -187,6 +187,24 @@ fun main() {
     // iterate backwards in loop --> use downTo
     for (it in 5 downTo 1) print(it)
 
+
+    // other loops ---------------------------------------
+    var balls = 0
+
+    // while loop
+    while (balls < 50) balls++
+    println("\nA person has $balls balls")
+
+    // do..while loop
+    do {
+        balls --
+    } while (balls > 50)
+    println("now, balls are $balls")
+
+    // repeat function that accepts the amount how many times a
+    //  statement is going to repeat itself.
+    repeat(2) { println("Keep going.") }
+
 }
 
 
