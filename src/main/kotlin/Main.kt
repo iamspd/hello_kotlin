@@ -137,7 +137,7 @@ fun main() {
      */
 
     val cars = arrayOf("Mercedes", "Audi", "Tesla", 4)
-    println(Arrays.toString(cars))
+    println(cars.contentToString())
 
     // addition of arrays
 
@@ -146,6 +146,16 @@ fun main() {
     val addArrays = numbers + numbers2
 
     println(addArrays[4])
+
+    /**
+     * define arrays within lists and vice versa
+     */
+
+    val nestedList = listOf(cars, goals)
+    println(nestedList)
+
+    val nestedArrays = arrayOf(goals, cars)
+    println(nestedArrays.contentToString())
 }
 
 
