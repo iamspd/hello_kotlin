@@ -156,6 +156,11 @@ fun main() {
 
     val nestedArrays = arrayOf(goals, cars)
     println(nestedArrays.contentToString())
+
+    // initialize array using code
+    // here, 'it' refers to array index starting from 0
+    val initializedArray = Array (5) {it * 2}
+    println(initializedArray.contentToString())
 }
 
 
