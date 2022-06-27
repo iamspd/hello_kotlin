@@ -39,7 +39,7 @@ fun main() {
     val j: Double = i.toDouble()
     val k: String = i.toString()
 
-    println(""+ i + "\n"+ j +"\n"+ k)
+    println("" + i + "\n" + j + "\n" + k)
 
     /**
      * kotlin allows to use underscore between the digits of long number
